@@ -1,0 +1,12 @@
+<div class="filters">
+  <h4>{{ titleBtn }}</h4>
+  <hr />
+  <div class="btn-group" role="group" aria-label="list-filters">
+    <button *ngFor="let btn of buttons | keys"
+            [ngClass]="{active: btn.name === titleBtn}"
+            type="button"
+            class="btn btn-light"
+            (click)="onChange(btn)"
+    >{{ btn.name }}</button>
+  </div>
+</div>

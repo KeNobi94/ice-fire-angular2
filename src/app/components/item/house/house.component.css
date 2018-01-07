@@ -1,0 +1,20 @@
+.card {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+.card-body {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.card-subtitle {
+  font-size: 11px;
+}
+
+.text-right {
+  float: right;
+}
+
+.bold {
+  font-weight: bold;
+}

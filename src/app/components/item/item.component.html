@@ -1,0 +1,6 @@
+<div [ngSwitch]="itemType">
+  <app-book *ngSwitchCase="'book'" [item]="item"></app-book>
+  <app-character *ngSwitchCase="'character'" [item]="item"></app-character>
+  <app-house *ngSwitchCase="'house'" [item]="item"></app-house>
+  <div *ngSwitchDefault></div>
+</div>

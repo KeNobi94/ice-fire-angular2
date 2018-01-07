@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-3 side-filters">
+
+    <app-filters (change)="change($event)"></app-filters>
+
+  </div>
+  <div class="col-9 list">
+    <!--list start-->
+    <div *ngIf="items && items.length" class="row">
+
+      <app-item
+        *ngFor="let item of items"
+        [item]="item"
+        [itemType]="listType.item"
+        class="col-xs-12 col-sm-6 col-lg-4 col-xl-3"
+      ></app-item>
+
+    </div>
+    <!--list end-->
+  </div>
+</div>
