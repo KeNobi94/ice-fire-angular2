@@ -24,15 +24,15 @@ import { KeysPipe } from './pipes/keys.pipe';
 import { JoinPipe } from './pipes/join.pipe';
 import { EmptyTextPipe } from './pipes/empty-text.pipe';
 
-// const appRoutes: Routes = [
-//   { path: '', component: ListComponent },
-//   { path: 'books/:page', component: ListComponent },
-//   { path: 'characters/:page', component: ListComponent },
-//   { path: 'houses/:page', component: ListComponent },
-//   { path: 'book/:key', component: ItemComponent },
-//   { path: 'character/:key', component: ItemComponent },
-//   { path: 'house/:key', component: ItemComponent }
-// ];
+const appRoutes: Routes = [
+  { path: '', component: ListComponent },
+  { path: 'books/:page', component: ListComponent },
+  { path: 'characters/:page', component: ListComponent },
+  { path: 'houses/:page', component: ListComponent },
+  { path: 'book/:id', component: ItemComponent },
+  { path: 'character/:id', component: ItemComponent },
+  { path: 'house/:id', component: ItemComponent }
+];
 
 @NgModule({
   declarations: [
@@ -53,7 +53,7 @@ import { EmptyTextPipe } from './pipes/empty-text.pipe';
     FormsModule,
     HttpClientModule,
     Ng4LoadingSpinnerModule.forRoot(),
-    // RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

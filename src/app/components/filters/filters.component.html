@@ -3,10 +3,11 @@
   <hr />
   <div class="btn-group" role="group" aria-label="list-filters">
     <button *ngFor="let btn of buttons | keys"
-            [ngClass]="{active: btn.name === titleBtn}"
+            [routerLink]="[btn.name.toLowerCase()]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}"
             type="button"
             class="btn btn-light"
-            (click)="onChange(btn)"
     >{{ btn.name }}</button>
   </div>
 </div>
