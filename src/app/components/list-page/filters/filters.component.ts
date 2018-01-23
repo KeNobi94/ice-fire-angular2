@@ -1,11 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { enums } from '../../shared/enums';
-import { IType } from '../../shared/IType';
+import { enums } from '../../../shared/enums';
+import { IType } from '../../../shared/IType';
 
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.component.html',
-  styleUrls: ['./filters.component.css']
+  styleUrls: ['./filters.component.scss']
 })
 export class FiltersComponent implements OnInit {
   @Output() change = new EventEmitter();

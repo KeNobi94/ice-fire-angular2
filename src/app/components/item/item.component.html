@@ -1,4 +1,4 @@
-<div [ngSwitch]="itemType">
+<div [ngSwitch]="itemType" class="item-container">
   <app-book *ngSwitchCase="'book'" [item]="item"></app-book>
   <app-character *ngSwitchCase="'character'" [item]="item"></app-character>
   <app-house *ngSwitchCase="'house'" [item]="item"></app-house>
